@@ -27,3 +27,5 @@ Este repositório contém um resumo completo dos principais conceitos da **Oracl
 
 ---
 
+
+## Fonte de conteúdo do [Oradata](https://www.youtube.com/@oradatatreinamentos) 📔
