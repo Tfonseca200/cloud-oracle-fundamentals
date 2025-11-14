@@ -1,4 +1,4 @@
-Cloud Oracle Fundamentals
+# Cloud Oracle Fundamentals
 
 cloud infrastructure platform
 
@@ -28,8 +28,9 @@ cloud infrastructure platform
 	
 - Governança e Administração
 
+<br>
 
-#01 - OCI Arquitertura
+## 01 - OCI Arquitertura
 
 - Regian (Região geografica - ex: estado de São Paulo)
 
@@ -45,9 +46,10 @@ Como escolher uma região:
 - Disponibilidade do serviço
 
 
+<br>
 
 
-#02 - IAM (identity and acess Management)
+## 02 - IAM (identity and acess Management)
 
 O que é?
 
@@ -90,7 +92,9 @@ Cada recurso pode pertencer apenas a um compartments.
 	* Finaceiros
 
 
-#03 - Network (Rede)
+<br>
+
+# 03 - Network (Rede)
 
 VCN
 
@@ -127,7 +131,7 @@ Serviços de Network
 	*VPN
 	*Oracle Fast Connect	
 	
-## Roteamento
+### Roteamento
 
 - Route Table (tabela de roteamento)
 	* Regras para rotear o tráfego de subnets
@@ -141,7 +145,7 @@ Serviços de Network
 	0.0.0.0/0     	| Nat Gateway
 	192.168.0.0/16  | Dynamic Routing Gateway
 
-## Peering
+### Peering
 
 - Roteamento entre VCNs.
 - Local peering (VCNs dentro da mesma região)
@@ -150,14 +154,14 @@ Serviços de Network
 - Remote Peering (VCNs em regiãos distintas)
 	* Usando o DRG (dynamic route gateway)
 
-## Roteamento (DRG v2)
+### Roteamento (DRG v2)
 
 - Faz o mesmo trabalho que o DRG padrão
 - Elimina a necessidade de varias peers
 - É capaz de conectar até 300 VCNs.
 - Se for preciso pode se utilizar o DRG v2 adicionais
 
-## Segurança
+### Segurança
 
 - Security List
 	* Atuam exatamente como um fireway
@@ -173,7 +177,7 @@ Serviços de Network
 	* É permitido apenas subnets (CIDR)
 	* Network Security Groups
 
-## Load Balancer
+### Load Balancer
 
 - Equilibrar o tráfego entre servidores
 - Layer 7 (HTTPS)
@@ -191,10 +195,11 @@ Obs: pode ser usando quando se precisa mais interligencia (Por exemplo: inpesaç
 Obs: poder ser usando quando se precisar velocidade no load Balancer
 
 
+<br>
 
-#04 - Compute
+## 04 - Compute
 
-## Tipos de maquinas
+### Tipos de maquinas
 
 - Compute = Instance = computadores = servidores
 
@@ -204,19 +209,19 @@ Obs: poder ser usando quando se precisar velocidade no load Balancer
 	* Bare Metal (servidor fisico)
 	* Dedicated Host (Servidor fisico dedicado para a virtualização)
 	
-## Configuração Flexível
+### Configuração Flexível
 
 - Memoria
 - CPU (quantidade e arquitertura)
 - Preemptibl VMs( uso pontual temporario )
 	sobe -> processa -> desliga
 	
-## Processadores ARM com NGINX
+### Processadores ARM com NGINX
 
 - Para aplicações mobile (smartphones)
 - Maior perfomance
 	
-## Como funciona
+### Como funciona
 
 - Antes de qualquer coisa, um servidor dentro da OCI precisa:
 	* Um compartment
@@ -229,7 +234,7 @@ Obs: poder ser usando quando se precisar velocidade no load Balancer
 	* Trocar fisicamente de servidor em caso de falhas
 
 
-## Scaling
+### Scaling
 
 - É possivel fazer o processo de scaling de duas maneiras:
 
@@ -243,7 +248,7 @@ Obs: poder ser usando quando se precisar velocidade no load Balancer
 	* Adicionamento novo servidores
 	
 	
-## Auto scaling
+### Auto scaling
 
 - Processo de adicionar novas máquinas virtuais 
 - Pode crescer e diminuir automaticamente.
@@ -257,7 +262,7 @@ Obs: poder ser usando quando se precisar velocidade no load Balancer
 	* Define o minimo e o maximo de instancias, justamente com as regras de scale "up" ou "down"
 		
 
-## Containers
+### Containers
 
 ### Orquestração
 
@@ -342,10 +347,10 @@ Obs: poder ser usando quando se precisar velocidade no load Balancer
 
 - Pago apenas pela execução
 - Plataforma auto-scaling
-	* Não requer servidores
+-  Não requer servidores
 
 
-
+<br>
 
 ## 05 - Storage
 
@@ -446,6 +451,7 @@ Obs: poder ser usando quando se precisar velocidade no load Balancer
 - Não necessita de ferramentas adicionais
 
 
+<br>
 
 ## 06 - Database
 
@@ -542,6 +548,7 @@ Obs: poder ser usando quando se precisar velocidade no load Balancer
 - Hybrid cloud (interoperabilidade on-promisse OCI e outros cloud providers)
 - Fácil de utilizar (acesso via API e ferramentas de desenvolvimento)
 
+<br>
 
 ## 07 - Security
 
